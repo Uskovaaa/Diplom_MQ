@@ -1,13 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/main.css">
 </head>
+
 <body>
-  <h1>Hello world!</h1>
+  <header class="header">
+    <div class="header-picture">
+      <div class="headline">
+        <a href="/" class="link-logo">
+          <img class="img-logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg"
+            alt="NOEMI">
+        </a>
+        <nav class="header-menu">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="/" class="menu-list-link">главная</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" class="menu-list-link">посты</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" class="menu-list-link">статьи</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" class="menu-list-link">теги</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" class="menu-list-link">темы</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#" class="menu-list-link">контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="header-title">блог о творчестве, спорте, и образе жизни</h1>
+    </div>
+  </header>
+  <div class="body">
+    <div class="body-wrapper">
+      <main class="content">
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
+              alt="Человек на песчаном пляже" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">travel</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">health</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">10 мест, ради которых стоит проснуться на рассвете</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще
+                закрыты.
+                Что посмотреть?
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
+              alt="Йога - девушка на берегу моря" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">health</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">lifestyle</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">йога для начинающих в домашних условиях</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в
+                шкафу.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg"
+              alt="Концерт под открытым небом - девушка танцует" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">music</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">лучшие музыкальные фестивали этого лета</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку? Мы
+                составили
+                список лучших летних фестивалей по всему миру.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
+              alt="Завтрак на столе" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">lyfestyle</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">food</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">наукоёмкий подход к кулинарии</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию
+                еды.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg"
+              alt="Подушка на стуле" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">lifestyle</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">interior</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">art</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">делаем модные принты на подушках для интерьера</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек,
+                проще снять чехлы, чем везти подушку в химчистку.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg"
+              alt="Скала - парень и девушка на фоне природы" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">travel</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">lifestyle</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">как первый раз отправиться в горы?</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов,
+                не
+                только от ваших желаний и интересов.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="post">
+          <figure class="post-media">
+            <img class="img-content" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
+              alt="Завтрак на столе" width="380">
+          </figure>
+          <div class="text">
+            <ul class="tegs_content">
+              <li class="teg">
+                <a href="#" class="teg_link">lifestyle</a>
+              </li>
+              <li class="teg">
+                <a href="" class="teg_link">food</a>
+              </li>
+            </ul>
+            <h2 class="des_title">
+              <a href="#" class="des_title_link">наукоёмкий подход к кулинарии</a>
+            </h2>
+            <div class="date_author">
+              <time class="date">10 июня 2019</time>
+              <span class="author">Неизвестный автор</span>
+            </div>
+            <div class="block_paragraph">
+              <p class="des_text">
+                Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию
+                еды.
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+      <aside class="aside">
+        <section class="section_sidebar">
+          <h3 class="title_aside">новые посты</h3>
+          <article class="block_posts">
+            <figure class="post_image">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg"
+                alt="Человек на песчаном пляже" class="i_post" width="70">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg"
+                alt="Йога - девушка на берегу моря" class="i_post" width="70">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg"
+                alt="Стул с собачкой, винтажная мебель" class="i_post" width="70">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="Завтрак на столе"
+                class="i_post" width="70">
+              <img src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg"
+                alt="Три девушки с длинными волосами" class="i_post" width="70">
+            </figure>
+            <div class="text_post">
+              <time class="date_post">14 июня 2019</time>
+              <h4 class="subtitle">
+                <a href="#" class="post_link">10 мест, ради которых стоит проснуться</a>
+              </h4>
+              <time class="date_post">14 июня 2019</time>
+              <h4 class="subtitle">
+                <a href="#" class="post_link">йога для домашних</a>
+              </h4>
+              <time class="date_post">14 июня 2019</time>
+              <h4 class="subtitle">
+                <a href="#" class="post_link">как мы превратили классное место в балкон</a>
+              </h4>
+              <time class="date_post">14 июня 2019</time>
+              <h4 class="subtitle">
+                <a href="#" class="post_link">кулинарный подход к науке</a>
+              </h4>
+              <time class="date_post">14 июня 2019</time>
+              <h4 class="subtitle">
+                <a href="#" class="post_link">лучшие прически для распущенных волос</a>
+              </h4>
+            </div>
+          </article>
+          <form class="block_search">
+            <label for="search_id" class="label_search">
+              <span class="line_search">Поле поиска</span>
+              <input id="search_id" type="search" class="search" placeholder="Найти...">
+            </label>
+            <button class="but_search" type="submit">
+              <span class="name_but_search">Кнопка поиска</span>
+            </button>
+          </form>
+        </section>
+        <section class="section_sidebar">
+          <h3 class="title_aside">рассылка</h3>
+          <form class="send_email">
+            <label class="label_email">
+              <input type="email" class="email" name="query" placeholder="Ваш email-адрес" required>
+              <span class="line_email">Поле для ввода адреса электронной почты</span>
+            </label>
+            <button type="submit" class="subscribe">
+              Подписаться
+              <span class="name_subscribe_hidden">Подписаться</span>
+            </button>
+          </form>
+        </section>
+        <section class="section_sidebar">
+          <h3 class="title_aside">теги</h3>
+          <div class="tegs_links">
+            <ul class="tegs_list">
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">fashion</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">music</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">lifestyle</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">art</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">interior</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">travel</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">food</a>
+              </li>
+              <li class="teg_list">
+                <a href="#" class="teg_list_link">health</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section_sidebar">
+          <h3 class="title_aside">темы</h3>
+          <ul class="themes_list">
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Красота</a>
+              <span class="theme_number">12</span>
+            </li>
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Здоровье</a>
+              <span class="theme_number">4</span>
+            </li>
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Образ жизни</a>
+              <span class="theme_number">145</span>
+            </li>
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Музыка</a>
+              <span class="theme_number">28</span>
+            </li>
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Спорт</a>
+              <span class="theme_number">62</span>
+            </li>
+            <li class="theme_list">
+              <a href="#" class="theme_list_link">Йога</a>
+              <span class="theme_number">8</span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <address class="footline">
+        <ul class="social_icons">
+          <li class="icon_item">
+            <a href="https://twitter.com/" class="icon_link icon_link__twitter">
+              <span class="span_icon">Профиль компании в Твиттере</span>
+            </a>
+          </li>
+          <li class="icon_item">
+            <a href="https://www.pinterest.ru/" class="icon_link icon_link__pinterest">
+              <span class="span_icon">Профиль компании в Пинтересте</span>
+            </a>
+          </li>
+          <li class="icon_item">
+            <a href="https://www.tumblr.com/" class="icon_link icon_link__tumblr">
+              <span class="span_icon">Профиль компании в Тамблере</span>
+            </a>
+          </li>
+        </ul>
+      </address>
+      <div class="copyright">
+        <a href="#" class="copy_text">Copyright © 2009–2019 City Blog LLC.</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
