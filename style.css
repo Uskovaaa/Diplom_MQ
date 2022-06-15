@@ -36,13 +36,12 @@ body {
 
 .header {
   background-color: #000000;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url("/images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   position: relative;
-  /* z-index: 1; */
 }
 
 .header-picture {
@@ -62,7 +61,6 @@ body {
   bottom: 0;
   background-color: #000000;
   opacity: 0.6;
-  /* z-index: 0; */
 }
 
 .headline {
@@ -120,14 +118,69 @@ body {
   margin: auto;
 }
 
-.body {
-  /* display: flex; */
-  /* flex-wrap: nowrap; */
-  /* align-items: flex-start; */
-  /* justify-content: space-between; */
+.title_trends {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  color: #0f0d0e;
+  margin: 60px 0;
+}
 
-  /* padding-left: 15px; */
-  /* padding-right: 15px; */
+.title_trends::after {
+  content: "";
+  display: block;
+  background-color: #e1d9bd;
+  width: 66px;
+  height: 3px;
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trends_posts {
+  display: flex;
+}
+
+.trends_post__garden {
+  background-image: url('/images/trend1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trends_post__cheese {
+  background-image: url('/images/trend2.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trends_post__mountains {
+  background-image: url('/images/trend3.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.trends_post__oranges {
+  background-image: url('/images/trend4.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+}
+
+.title__trend_post {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.tags_trends
+
+.body {
   margin-top: 60px;
 }
 
@@ -140,10 +193,6 @@ body {
 }
 
 .content {
-  /*   display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  margin-top: 60px; */
   width: 780px;
 }
 
@@ -163,29 +212,16 @@ body {
   display: block;
 }
 
-/* .img-content:nth-child(n + 2) {
-  margin-top: 60px;
-} */
-
-/* .description {
-  width: 382px;
-  height: 295px;
-}
-
-.description:nth-child(n + 2) {
-  margin-top: 60px;
-} */
-
-.tegs_content {
+.tags_content {
   display: flex;
   margin-bottom: 20px;
 }
 
-.teg:not(:first-child) {
+.tag:not(:first-child) {
   margin-left: 15px;
 }
 
-.teg_link {
+.tag_link {
   font-family: "OpenSans-Bold", Arial, sans-serif;
 
   text-transform: uppercase;
@@ -193,7 +229,7 @@ body {
   color: #b59f5b;
 }
 
-.teg_link:hover {
+.tag_link:hover {
   border-bottom: 2px solid #dcd2b8;
 }
 
@@ -252,7 +288,6 @@ body {
 }
 
 .aside {
-  /*   margin-top: 60px; */
   width: 270px;
 }
 
@@ -420,20 +455,20 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.block_tegs {
+.block_tags {
   margin-top: 60px;
 }
 
-.tegs_links {
+.tags_links {
   margin-top: 20px;
 }
 
-.tegs_list {
+.tags_list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.teg_list {
+.tag_list {
   font-family: "OpenSans-Bold", Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -441,23 +476,23 @@ body {
   padding: 7px 10px;
 }
 
-.teg_list:hover {
+.tag_list:hover {
   border: 3px solid #b59f5b;
 }
 
-.teg_list_link {
+.tag_list_link {
   color: #0f0d0e;
 }
 
-.teg_list {
+.tag_list {
   margin-left: 5px;
 }
 
-.teg_list {
+.tag_list {
   margin-bottom: 6px;
 }
 
-.teg_list:nth-child(3n + 1) {
+.tag_list:nth-child(3n + 1) {
   margin-left: 0;
 }
 
