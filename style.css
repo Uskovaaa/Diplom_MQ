@@ -45,7 +45,7 @@ body {
 }
 
 .header-picture {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 15px;
   position: relative;
@@ -124,7 +124,7 @@ body {
   text-align: center;
   font-size: 20px;
   color: #0f0d0e;
-  margin: 60px 0;
+  margin: 60px 0 28px 0;
 }
 
 .title_trends::after {
@@ -142,46 +142,95 @@ body {
   display: flex;
 }
 
-.trends_post__garden {
-  background-image: url('/images/trend1.jpg');
+.trends_post {
+  display: flex;
+  align-items: flex-end;
+  width: 24.7%;
+  height: 320px;
+  position: relative;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.trends_post:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.trends_post:nth-child(n+2) {
+  margin-left: 4px;
+}
+
+.trends_post__garden {
+  background-image: url('/images/trend1.jpg');
+  
 }
 
 .trends_post__cheese {
   background-image: url('/images/trend2.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .trends_post__mountains {
   background-image: url('/images/trend3.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .trends_post__oranges {
   background-image: url('/images/trend4.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   
 }
 
+.trends_text {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #b59f5b;
+  position: relative;
+  z-index: 2;
+  padding: 35px;
+  margin: 0 20px 20px;
+}
+
 .title__trend_post {
+  margin: 0;
+}
+
+.title_trend_link {
   font-family: "OpenSans-Bold", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   color: #ffffff;
+  margin: 0;
 }
 
-.tags_trends
+.title_trend_link:hover {
+  color: #b59f5b;
+}
 
-.body {
-  margin-top: 60px;
+.tags_trends {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.tag_trends:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.tag_trends_link {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #b59f5b;
+}
+
+.tag_trends_link:hover {
+  border-bottom: 2px solid #877d41;
 }
 
 .body-wrapper {
@@ -189,7 +238,8 @@ body {
   justify-content: space-between;
   padding: 0 15px;
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
+  margin-top: 60px;
 }
 
 .content {
