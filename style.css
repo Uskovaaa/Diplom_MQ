@@ -432,7 +432,7 @@ body {
 }
 
 .but_search {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-image: url("/svg/search.svg");
   background-repeat: no-repeat;
   background-color: #b59f5b;
   background-size: 20px;
@@ -440,6 +440,7 @@ body {
   border: none;
   width: 48px;
   height: 48px;
+  cursor: pointer;
 }
 
 .but_search:hover {
@@ -489,6 +490,7 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .subscribe:hover {
@@ -563,8 +565,105 @@ body {
   vertical-align: super;
 }
 
+.shop {
+  margin: 0 15px;
+}
+
+.shop_posts {
+  display: flex;
+  justify-content: center;
+}
+
+.shop_post {
+  width: 300px;
+}
+
+.shop_post:nth-child(n+2) {
+  margin-left: 110px;  
+}
+
+.shop_picture {
+  margin: 0;
+}
+
+.des_price {
+  outline: 3px solid #bcae85;
+  outline-offset: 30px;
+  height: 200px;
+  width: 310px;
+}
+
+.shop_title {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #0f0d0e;
+  margin: 0;
+}
+
+.des_shop {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #0f0d0e;
+  margin: 0;
+}
+
+.des_shop_link {
+  color: #b59f5b;
+}
+
+.des_shop_link:hover {
+  text-decoration: underline;
+}
+
+.price_btn {
+  display: flex;
+  margin-top: 20px;
+}
+
+.price_last {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #0f0d0e;
+  margin: 0;
+}
+
+.price_sale {
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #0f0d0e;
+  margin: 0;
+}
+
+.buy_btn {
+  margin-left: 105px;
+  background-color: #b59f5b;
+  border: none;
+  width: 140px;
+  height: 48px;
+
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buy_btn:hover {
+  background-color: #323232;
+}
+
+.name_buy_hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
 .footer {
-  margin-top: 64px;
+  margin-top: 65px;
 }
 
 .footer-wrapper {
@@ -594,26 +693,28 @@ body {
   padding: 30px 15px;
 }
 
+.icon_item:nth-child(n+2) {
+  margin-left: 20px;
+}
+
 .icon_link__twitter {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+  background-image: url("/svg/004-twitter.svg");
 }
 
 .icon_link__pinterest {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
-  margin-left: 80px;
+  background-image: url("/svg/001-pinterest.svg");
 }
 
-/* .icon_link__facebook {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+.icon_link__facebook {
+  background-image: url("/svg/002-facebook-logo.svg");
 }
 
 .icon_link__instagram {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
-} */
+  background-image: url("/svg/005-instagram.svg");
+}
 
 .icon_link__tumblr {
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
-  margin-left: 80px;
+  background-image: url("/svg/003-tumblr.svg");
 }
 
 .span_icon {
@@ -636,4 +737,190 @@ body {
   font-family: "OpenSans-Bold", Arial, sans-serif;
   font-size: 12px;
   color: #999999;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  /* display: none; */
+}
+
+.popup::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.6;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  width: 390px;
+  height: 590px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 2;
+  padding: 0 30px;
+}
+
+.modal_close {
+  background-image: url('/svg/form-x.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  width: 18px;
+  height: 18px;
+  background-size: 18px;
+  position: absolute;
+  top: -26px;
+  right: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.name_but_close {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.combobox {
+  display: block;
+  width: 330px;
+  height: 48px;
+  background-color: #f4f7f6;
+  border: none;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 13px;
+  color: #a2a4a3;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url('/svg/form-arrows.svg');
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 9px 17px;
+
+  padding-left: 20px;
+  margin-top: 12px;
+
+  cursor: pointer;
+}
+
+select, option:checked {
+  color: #000000;
+}
+
+.field:focus,
+.combobox:focus  {
+  outline: 1px solid #ebe7d7;
+}
+
+.form_radio {
+  margin-top: 30px;
+}
+ 
+.radio_group {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 10px;
+  cursor: pointer;
+} 
+
+.radio_group:nth-of-type(n+2) {
+  margin-left: 16px;
+}
+
+.form_hint {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  display: block;
+}
+
+.radio_text {
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+}
+
+.radio_text::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/svg/form-empty-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.radio {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: 0;
+}
+
+.radio:checked ~ .radio_text::before {
+  background-image: url("/svg/form-circle.svg");
+}
+
+.form_row {
+  margin-top: 30px;
+}
+
+.field {
+  resize: none;
+  width: 330px;
+  height: 130px;
+  border: none;
+  background-color: #f4f7f6;
+  font-family: "OpenSans-Regular", Arial, sans-serif;
+  font-size: 13px;
+  color: #a2a4a3;
+  margin-top: 12px;
+  padding: 20px 0 0 20px;
+}
+
+.field::placeholder {
+  color: #a2a4a3;
+}
+
+.form_send {
+  margin-top: 25px;
+  margin-bottom: 55px;
+}
+
+.btn_send {
+  width: 330px;
+  height: 48px;
+  background-color: #b59f5b;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_send:hover {
+  background-color: #323232;
+}
+
+.name_send_hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
 }

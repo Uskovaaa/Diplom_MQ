@@ -48,7 +48,7 @@
       <div class="title_add_line">
         <h2 class="title_add">сейчас в тренде</h2>
       </div>
-        <section class="trends_posts">
+      <section class="trends_posts">
           <article class="trends_post trends_post__garden">
             <div class="trends_text">
               <ul class="tags_trends">
@@ -409,6 +409,75 @@
       <div class="title_add_line">
         <h2 class="title_add">наши изделия</h2>
       </div>
+      <section class="shop_posts">
+        <article class="shop_post">
+          <figure class="shop_picture">
+            <img src="/images/shop-item-desk1.jpg" alt="Подушка на стуле" class="post_pic">
+          </figure>
+          <div class="des_price">
+            <div class="shop_text">
+              <h2 class="shop_title">подушка на диван</h2>
+              <p class="des_shop">Набор из двух подушек с модными принтами. Видео о создании <a href="#"
+                  class="des_shop_link">здесь</a>.</p>
+            </div>
+            <div class="price_btn">
+              <div class="price">
+                <h4 class="price_last">1000 ₽</h4>
+                <h3 class="price_sale">800 ₽</h3>
+              </div>
+              <button class="buy_btn" type="submit">
+                в магазин
+                <span class="name_buy_hidden">Кнопка перехода в магазин</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="shop_post">
+          <figure class="shop_picture">
+            <img src="/images/shop-item-desk2.jpg" alt="Книги и игрушка" class="post_pic">
+          </figure>
+          <div class="des_price">
+            <div class="shop_text">
+              <h2 class="shop_title">кукла «зайчик»</h2>
+              <p class="des_shop">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#"
+                  class="des_shop_link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+            </div>
+            <div class="price_btn">
+              <div class="price">
+                <h4 class="price_last" hidden>500 ₽</h4>
+                <h3 class="price_sale">3500 ₽</h3>
+              </div>
+              <button class="buy_btn" type="submit">
+                в магазин
+                <span class="name_buy_hidden">Кнопка перехода в магазин</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="shop_post">
+          <figure class="shop_picture">
+            <img src="/images/shop-item-desk3.jpg" alt="Рамка и ваза" class="post_pic">
+          </figure>
+          <div class="des_price">
+            <div class="shop_text">
+              <h2 class="shop_title">шестиугольная рамка</h2>
+              <p class="des_shop">
+                Необычная рамка для украшения дома из видео <a href="#" class="des_shop_link">«Как сделать рамку из подручных средств за 30 минут»</a>
+              </p>
+            </div>
+            <div class="price_btn">
+              <div class="price">
+                <h4 class="price_last">500 ₽</h4>
+                <h3 class="price_sale">400 ₽</h3>
+              </div>
+              <button class="buy_btn" type="submit">
+                в магазин
+                <span class="name_buy_hidden">Кнопка перехода в магазин</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
     </aside>
   </div>
   <footer class="footer">
@@ -426,6 +495,16 @@
             </a>
           </li>
           <li class="icon_item">
+            <a href="https://www.facebook.com/" class="icon_link icon_link__facebook">
+              <span class="span_icon">Профиль компании в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="icon_item">
+            <a href="https://www.instagram.com/" class="icon_link icon_link__instagram">
+              <span class="span_icon">Профиль компании в Инстаграме</span>
+            </a>
+          </li>
+          <li class="icon_item">
             <a href="https://www.tumblr.com/" class="icon_link icon_link__tumblr">
               <span class="span_icon">Профиль компании в Тамблере</span>
             </a>
@@ -437,6 +516,46 @@
       </div>
     </div>
   </footer>
+  <div class="popup">
+    <div class="modal">
+      <button class="modal_close">
+        <span class="name_but_close">Кнопка закрытия модального окна</span>
+      </button>
+      <div class="title_add_line">
+        <h2 class="title_add">ваш фидбэк</h2>
+      </div>
+      <div class="form_combobox">
+        <label class="combobox_group">
+          <span class="form_hint">Как часто вы заходите на сайт?</span>
+          <select class="combobox">
+            <option selected>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+        </label>
+      </div>
+      <div class="form_radio">
+        <span class="form_hint">Вы подписаны на e-mail рассылку?</span>
+        <label class="radio_group">
+          <input type="radio" class="radio" name="radio_group" checked>
+          <span class="radio_text">Да</span>
+        </label>
+        <label class="radio_group">
+          <input type="radio" class="radio" name="radio_group">
+          <span class="radio_text">Нет</span>
+        </label>
+      </div>
+      <div class="form_row">
+        <span class="form_hint">Расскажите, какой контент вы хотели бы видеть
+        на нашем сайте?</span>
+        <textarea class="field" placeholder="Может, больше рецептов?"></textarea>
+      </div>
+      <div class="form_send">
+        <button class="btn_send" type="submit">отправить</button>
+        <span class="name_send_hidden">Кнопка отправки фидбека</span>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
