@@ -18,6 +18,9 @@
             alt="NOEMI">
         </a>
         <nav class="header-menu">
+          <button class="menu_button">
+            <span class="menu_button_label">открыть меню</span>
+          </button>
           <ul class="menu-list">
             <li class="menu-list-item">
               <a href="/" class="menu-list-link">главная</a>
@@ -411,9 +414,12 @@
       </div>
       <section class="shop_posts">
         <article class="shop_post">
-          <figure class="shop_picture">
-            <img src="/images/shop-item-desk1.jpg" alt="Подушка на стуле" class="post_pic">
-          </figure>
+          <picture class="shop_picture">
+            <source media="(min-width: 1200px)" srcset="/images/shop-item-desk1.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="/images/shop-item-tablet1.jpg">
+            <source media="(max-width: 640px)" srcset="/images/shop-item-mobile1.jpg">
+            <img src="/images/shop-item-desk1.jpg" srcset="/images/shop-item-desk1.jpg" alt="Подушка на стуле" class="post_pic">
+          </picture>
           <div class="des_price">
             <div class="shop_text">
               <h2 class="shop_title">подушка на диван</h2>
@@ -433,9 +439,12 @@
           </div>
         </article>
         <article class="shop_post">
-          <figure class="shop_picture">
-            <img src="/images/shop-item-desk2.jpg" alt="Книги и игрушка" class="post_pic">
-          </figure>
+          <picture class="shop_picture">
+            <source media="(min-width: 1200px)" srcset="/images/shop-item-desk2.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="/images/shop-item-tablet2.jpg">
+            <source media="(max-width: 640px)" srcset="/images/shop-item-mobile2.jpg">
+            <img src="/images/shop-item-desk2.jpg" srcset="/images/shop-item-desk2.jpg" alt="Книги и игрушка" class="post_pic">
+          </picture>
           <div class="des_price">
             <div class="shop_text">
               <h2 class="shop_title">кукла «зайчик»</h2>
@@ -455,9 +464,12 @@
           </div>
         </article>
         <article class="shop_post">
-          <figure class="shop_picture">
-            <img src="/images/shop-item-desk3.jpg" alt="Рамка и ваза" class="post_pic">
-          </figure>
+          <picture class="shop_picture">
+            <source media="(min-width: 1200px)" srcset="/images/shop-item-desk3.jpg">
+            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="/images/shop-item-tablet3.jpg">
+            <source media="(max-width: 640px)" srcset="/images/shop-item-mobile3.jpg">
+            <img src="/images/shop-item-desk3.jpg" srcset="/images/shop-item-desk3.jpg" alt="Рамка и ваза" class="post_pic">
+          </picture>
           <div class="des_price">
             <div class="shop_text">
               <h2 class="shop_title">шестиугольная рамка</h2>
@@ -516,7 +528,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup">
+  <div class="popup hidden">
     <div class="modal">
       <button class="modal_close">
         <span class="name_but_close">Кнопка закрытия модального окна</span>
