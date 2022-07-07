@@ -296,7 +296,6 @@ body {
 
 .trends_post__garden {
   background-image: url('/images/trend1.jpg');
-  
 }
 
 .trends_post__cheese {
@@ -309,7 +308,6 @@ body {
 
 .trends_post__oranges {
   background-image: url('/images/trend4.jpg');
-  
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
@@ -419,6 +417,7 @@ body {
 @media (min-width: 641px) and (max-width: 1199px) {
   .body-wrapper {
     margin-top: 50px;
+    justify-content: center;
   }
 }
 
@@ -426,6 +425,7 @@ body {
   .body-wrapper {
     flex-direction: column;
     margin-top: 40px;
+    justify-content: center;
   }
 }
 
