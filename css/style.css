@@ -1,13 +1,13 @@
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url('fonts/OpenSans-Regular.woff');
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OpenSans-Bold";
-  src: url('fonts/OpenSans-Bold.woff');
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
   font-style: normal;
 }
@@ -45,19 +45,19 @@ body {
 
 @media (min-width: 1200px) {
   .header {
-    background-image: url('/images/banner-bg.jpg');
+    background-image: url(../images/banner-bg.jpg);
   }
 }
 
 @media (min-width: 641px) and (max-width: 1199px) {
   .header {
-    background-image: url('/images/banner-bg-tablet.jpg');
+    background-image: url(../images/banner-bg-tablet.jpg);
   }
 }
 
 @media (max-width: 640px) {
   .header {
-    background-image: url('/images/banner-mobile.jpg');
+    background-image: url(../images/banner-mobile.jpg);
   }
 }
 
@@ -295,19 +295,19 @@ body {
 }
 
 .trends_post__garden {
-  background-image: url('/images/trend1.jpg');
+  background-image: url(../images/trend1.jpg);
 }
 
 .trends_post__cheese {
-  background-image: url('/images/trend2.jpg');
+  background-image: url(../images/trend2.jpg);
 }
 
 .trends_post__mountains {
-  background-image: url('/images/trend3.jpg');
+  background-image: url(../images/trend3.jpg);
 }
 
 .trends_post__oranges {
-  background-image: url('/images/trend4.jpg');
+  background-image: url(../images/trend4.jpg);
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
