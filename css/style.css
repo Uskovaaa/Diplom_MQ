@@ -1094,23 +1094,23 @@ body {
 }
 
 .icon_link__twitter {
-  background-image: url(../svg/004-twitter.svg);
+  background-image: url('../svg/004-twitter.svg');
 }
 
 .icon_link__pinterest {
-  background-image: url(../svg/001-pinterest.svg);
+  background-image: url('../svg/001-pinterest.svg');
 }
 
 .icon_link__facebook {
-  background-image: url(../svg/002-facebook-logo.svg);
+  background-image: url('../svg/002-facebook-logo.svg');
 }
 
 .icon_link__instagram {
-  background-image: url(../svg/005-instagram.svg);
+  background-image: url('../svg/005-instagram.svg');
 }
 
 .icon_link__tumblr {
-  background-image: url(../svg/003-tumblr.svg);
+  background-image: url('../svg/003-tumblr.svg');
 }
 
 .span_icon {
@@ -1172,7 +1172,7 @@ body {
 }
 
 .modal_close {
-  background-image: url(../svg/form-x.svg);
+  background-image: url('../svg/form-x.svg');
   background-repeat: no-repeat;
   background-position: center center;
   border: none;
@@ -1204,7 +1204,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  background-image: url(../svg/form-arrows.svg);
+  background-image: url('../svg/form-arrows.svg');
   background-repeat: no-repeat;
   background-position: right 14px center;
   background-size: 9px 17px;
@@ -1256,7 +1256,7 @@ select, option:checked {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url(../svg/form-empty-circle.svg);
+  background-image: url('../svg/form-empty-circle.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 18px;
@@ -1274,7 +1274,7 @@ select, option:checked {
 }
 
 .radio:checked ~ .radio_text::before {
-  background-image: url(../svg/form-circle.svg);
+  background-image: url('../svg/form-circle.svg');
 }
 
 .form_row {
