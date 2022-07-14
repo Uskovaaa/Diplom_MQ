@@ -740,7 +740,7 @@ body {
 }
 
 .but_search {
-  background-image: url(../svg/search.svg);
+  background-image: url('../svg/search.svg');
   background-repeat: no-repeat;
   background-color: #b59f5b;
   background-size: 20px;
