@@ -486,7 +486,7 @@ body {
   }
 
   .img-content {
-    width: 330px;
+    width: 100%;
   }
 }
 
@@ -815,6 +815,7 @@ body {
 .tags_list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .tag_list {
@@ -835,24 +836,6 @@ body {
 
 .tag_list {
   margin: 0 0 5px 5px;
-}
-
-@media (min-width: 1200px) {
-  .tag_list:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1199px) {
-  .tag_list:nth-child(3n + 1) {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 640px) {
-  .tag_list:nth-child(4n + 1) {
-    margin-left: 0;
-  }
 }
 
 .block_themes {
